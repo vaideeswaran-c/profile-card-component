@@ -2,33 +2,39 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi"
+		/>
+
 		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 		<title>Frontend Mentor | Profile card component</title>
+
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<main class="main flex flex-center flex-column">
-			<article class="card">
-				<div class="card__banner"></div>
-				<div class="card__details flex flex-column">
-					<picture class="person-image">
-						<img src="./images/image-victor.jpg" alt="Victor Crest" class="img" />
-					</picture>
-
-					<h3 class="text-center bio">
-						Victor Crest
-						<span class="regular color-light">26 <br />London</span>
-					</h3>
-
-					<hr />
-					<ul class="list">
-						<li class="list__item"><span class="bold">80K</span>Followers</li>
-						<li class="list__item"><span class="bold">803K</span>Likes</li>
-						<li class="list__item"><span class="bold">1.4K</span>Photos</li>
-					</ul>
-				</div>
-			</article>
-		</main>
+		<div class="top">
+			<img src="./images/bg-pattern-top.svg" alt="top-pattern" />
+		</div>
+		<div class="bottom">
+			<img src="./images/bg-pattern-bottom.svg" alt="bottom-pattern" />
+		</div>
+		<section class="card">
+			<div class="card__top"></div>
+			<img src="./images/image-victor.jpg" alt="avatar" class="card__avatar" />
+			<div class="card__info"><span>Victor Crest</span>26</div>
+			<div class="card__address">London</div>
+			<hr />
+			<div class="stat">
+				<div class="stat__info"><span>80K</span>Followers</div>
+				<div class="stat__info"><span>803K</span>Likes</div>
+				<div class="stat__info"><span>1.4K</span>Photos</div>
+			</div>
+		</section>
 	</body>
 </html>
